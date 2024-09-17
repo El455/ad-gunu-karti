@@ -14,7 +14,7 @@
       }
       body{
          font-family: arial,sans-serif;
-         background-color: #f0f8ff;
+         background-color: #f8f0f8;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -24,12 +24,12 @@
          text-align: center;
       }
       .card{
-         background-color: #fff;
-         padding: 20px;
-         border-radius: 10px;
-         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-         max-width: 400px;
-         margin: 20px auto;
+       border: 2px solid #eb3f3f;
+       border-radius: 15px;
+       padding: 20px;
+       background: #fff;
+       box-shadow: 0 4px 8px rgb(0,0,0,0.2);
+      
       }
       h1{
          color: #333;
@@ -67,7 +67,17 @@
      
    </div>
 </div>
-<script src="tebrik.js"></script>
+<script>
+   document.getElementById("changenamebtn").
+addEventListener("click", function()
+{ 
+    var newname = prompt("adı daxil edin:");
+    if (newname) {
+        document.getElementById("name").textContent=newname;
+    }
+
+});
+</script>
 
 
 </body>
